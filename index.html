@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <div id="weather-info">
+            <h2>Current Weather</h2>
+            <p>Location: <span id="location"></span></p>
+            <p>Temperature: <span id="temperature">...</span>°C</p>
+            <p>Humidity: <span id="humidity">...</span>%</p>
+            <p>Wind Speed: <span id="wind-speed">...</span> km/h</p>
+            <input type="text" id="location-input" placeholder="Enter city or zip code">
+            <button onclick="searchWeather()">Search</button>
+        </div>
+    </main>
+
+    <script>
+        function searchWeather() {
+    const location = document.getElementById("location-input").value;
+    const temp = document.getElementById("temperature");
+    const hum = document.getElementById("humidity");
+    const wind = document.getElementById("wind-speed");
+    const locationOutput= document.getElementById("location");
+    hum.innerText=10;
+    temp.innerText=44;
+    wind.innerText=34;
+    locationOutput.innerText=location;
+}
+
+    </script>
+</body>
+
+</html>
